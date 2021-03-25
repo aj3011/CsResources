@@ -1,0 +1,15 @@
+.banner{
+    height: 90vh;
+}
+
+.bannerimg img{
+    width: 100%;
+    height: 90vh;
+}
+
+.bannerheading{
+    position: relative;
+    bottom:400px;
+    text-align: center;
+}
+

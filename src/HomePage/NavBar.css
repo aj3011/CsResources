@@ -1,0 +1,56 @@
+:root{
+    --Green: #16697a;
+   --Cream: #ede7e3;
+   --Orange: #ffa62b;
+}
+
+.navbar{
+    height: 7vh;
+    width: 100%;
+    background-color: var(--Green) ;
+    position: fixed;
+    color: var(--Cream);
+}
+
+.brandName{
+    display: flex;
+    margin-top: 3px;
+    margin-left: 100px;
+}
+
+.brandName img{
+    height : 30px;
+    width: 30px;
+   
+}
+
+.brandName h1{
+   
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color:var(--Cream);
+    
+}
+
+.navbutton{
+   margin-bottom: 3px;
+    margin-right: 100px;
+}
+
+.navbutton a
+{
+    padding: 10px;
+    color:var(--Cream);
+    font-size: 20px;
+}
+
+
+.navbutton img{
+    margin-bottom: 3px;
+}
+.navbutton a:hover{
+ text-decoration: none;
+ color: var(--Orange);
+}

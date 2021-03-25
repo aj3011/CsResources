@@ -1,0 +1,12 @@
+.aboutUs{
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsInfo{
+    padding: 60px;
+}
