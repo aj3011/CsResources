@@ -6,6 +6,10 @@
 }
 /* class figured out from inspect element */
 .navBar{
+    background-color: none;
+}
+.navBar.active{
+    transition: 0.5s smooth;
     background-color:var(--Blue);
 }
 

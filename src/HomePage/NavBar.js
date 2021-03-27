@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './NavBar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import brandIcon from './Icons/struggle.png'
@@ -8,11 +8,25 @@ import ContactUs from './Icons/contact.png'
 import {Nav, Navbar} from 'react-bootstrap';
 
 
-function navBar()
+function NavBar()
 {
+  const[NavBar,setNavBar]=useState(false);
+
+  const ChangeBackground = ()=>{
+    if(window.scrollY >220)
+    {
+      setNavBar(true);
+    }
+    else
+    {
+      setNavBar(false);
+    }
+  }
+
+  window.addEventListener('scroll',ChangeBackground);
     return(
     <div>
-    <Navbar fixed="top" expand="lg" variant="dark" className='color-nav' className='navBar'>
+    <Navbar fixed="top" expand="lg" variant="dark" className='color-nav' className={NavBar ? 'navBar active' : 'navBar'}>
   <Navbar.Brand href="#home">ProjectMania</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -41,4 +55,4 @@ function navBar()
     )
 }
 
-export default navBar;
+export default NavBar;
