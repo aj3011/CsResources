@@ -1,16 +1,22 @@
 :root{
-    --Green: #16697a;
+    --Green: #66FCF1;
    --Cream: #ede7e3;
    --Orange: #ffa62b;
+   --Blue:#1f2833;
+}
+/* class figured out from inspect element */
+.navBar{
+    background-color:var(--Blue);
 }
 
 .navbar{
     height: 7vh;
     width: 100%;
-    background-color: var(--Green) ;
     position: fixed;
     color: var(--Cream);
 }
+
+
 
 .brandName{
     display: flex;
@@ -53,4 +59,10 @@
 .navbutton a:hover{
  text-decoration: none;
  color: var(--Orange);
+}
+
+
+
+.ml-auto img{
+    padding: 15px;
 }

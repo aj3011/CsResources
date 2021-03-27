@@ -4,5 +4,21 @@
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    height: 60px;
+    background-color:#222;
+    color:blue;
 }
 
+.list{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.item{
+    list-style: none;
+    padding: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
