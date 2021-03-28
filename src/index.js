@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Dividers from './HomePage/Dividers.js'
+import Languages from './Languages.js'
+import Tech from './Tech.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +24,15 @@ ReactDOM.render(
       <Switch>
          <Route exact path ="/dividers" component ={Dividers} />
       </Switch>
+
+      <Switch>
+        <Route exact path='/languages' component ={Languages} />
+      </Switch>
+
+      <Switch>
+        <Route exact path='/Tech' component={Tech} />
+      </Switch>
+
   </Router>
     
            

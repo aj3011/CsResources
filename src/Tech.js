@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProjectIdeas.css'
+import './Tech.css'
 
 function ProjectIdeas() {
     return (

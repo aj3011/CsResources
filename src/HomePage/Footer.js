@@ -10,20 +10,16 @@ function Footer() {
         <div className='footer footer1'>
         <ul className='list'>
 
-            <li className='item'>Resources</li> 
-            <hr class='line' />
-            <li className='item'>Contact Us</li>
-            <hr class='line' />
-            <li className='item'>Send Us Feedback</li>
+            <li className='item1'>Resources</li> 
+            <li className='item1'>Contact Us</li>
+            <li className='item1'>Send Us Feedback</li>
         </ul>
         </div>
         <div className='footer footer2'>
         <ul className='list'>
-            <li className='item'><img className='fimg' src={instagram} />On Instagram</li> 
-            <hr class='line' />
-            <li className='item'><img className='fimg' src={facebook} />On Facebook</li>
-            <hr class='line' />
-            <li className='item'><img className='fimg' src={discord} />On Discord</li>
+            <li className='item2 item'><img className='fimg' src={instagram} />On Instagram</li> 
+            <li className='item2 item'><img className='fimg' src={facebook} />On Facebook</li>
+            <li className='item2 item'><img className='fimg' src={discord} />On Discord</li>
         </ul>
         </div>
         </div>
