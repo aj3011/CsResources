@@ -1,12 +1,22 @@
-.aboutUs{
+
+.aboutus h1 {
     text-align: center;
+    margin: 0;
 }
 
-.info{
+.about img {
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.about-content p {
+    padding: 20px;
+}
+
+.about {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.aboutUsInfo{
-    padding: 60px;
-}

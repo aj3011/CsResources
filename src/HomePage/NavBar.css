@@ -5,8 +5,20 @@
    --Blue:#1f2833;
 }
 /* class figured out from inspect element */
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color:var(--Blue) !important;
+    background: beige;
+}
 .navBar{
     background-color: none;
+    height: 75px !important;
+}
+.nav-link
+{
+    color: white;
+    padding-right: 40px !important; 
+    /* important tag overrides all applied styling to the element */
 }
 .navBar.active{
     transition: 0.5s smooth;
@@ -31,6 +43,7 @@
 .brandName img{
     height : 30px;
     width: 30px;
+    padding-right: 10px;
    
 }
 
@@ -70,3 +83,29 @@
 .ml-auto img{
     padding: 15px;
 }
+
+.banner-heading button {
+    background-color: var(--Black);
+    border: 2px solid var(--SkyBlue);
+    color: var(--Cream);
+    font-weight: 500;
+    height:60px;
+    width: 200px;
+    border-radius: 50px;
+  }
+
+  .banner-heading button:hover {
+    transition: 0.2 smooth;
+    background-color: transparent;
+    color: var(--Black);
+  }
+
+  .navlogo{
+      height: 60px;
+      margin-right: 10px;
+  }
+
+  /* #basic-navbar-nav
+  {
+      background-color: blue;
+  } */

@@ -1,9 +1,10 @@
 import React from 'react'
+import './Resources.css'
 
 function Resources() {
     return (
         <div>
-            <h1>hi</h1>
+            
         </div>
     )
 }

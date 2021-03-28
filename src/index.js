@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Resources from './HomePage/Resources.js'
+import Dividers from './HomePage/Dividers.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +20,7 @@ ReactDOM.render(
   </Switch>   
      
       <Switch>
-         <Route exact path ="/resources" component ={Resources} />
+         <Route exact path ="/dividers" component ={Dividers} />
       </Switch>
   </Router>
     

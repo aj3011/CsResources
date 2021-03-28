@@ -1,9 +1,11 @@
+/* used react-typed module for typewriter effect  */
 import React from 'react'
 import bannerImage from './Icons/BannerImage.jpeg'
 import './Banner.css'
 import Button from '@material-ui/core/button';
-import Resources from './Resources.js'
+import Resources from './Dividers.js'
 import BackGround from '../Videos/bannerback.mp4';
+import Typed from 'react-typed';
 import {
     BrowserRouter as Router,
     Switch,
@@ -14,10 +16,19 @@ import {
 
 function Banner()
 {
+
+    function loadScreen()
+    {
+        <div class="loader-wrapper">
+        <div id='loader'>
+            {/* <!-- used for three revolving circles --> */}
+            window.alert('hello');
+        </div>
+        </div>
+    }
     return (
         <div className='banner'>
-           <div className = 'bannerheading'>
-           <video  autoPlay loop muted
+        <video  autoPlay loop muted
            style={{
                position:"absolute",
                top:'50%',
@@ -32,15 +43,21 @@ function Banner()
            }}>
             <source src={BackGround} type='video/mp4' />
            </video> 
-              <h1>What is Lorem Ipsum?</h1><p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/> when an unknown printer took a galley of 
-                    type and scrambled it to make a type specimen book. It has survived not only five centuries,<br/> but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s<br/> with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing<br/> software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
-                    <React.Fragment>
-                     <Link to="/resources">
-                        <Button variant="contained" >Let's Begin !</Button>
+              
+           <div className = 'bannerheading'>
+              <div className='heading' >Cs Hut</div>
+                 <p className='bodytext'>
+                  <Typed
+                     strings={[
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"]}
+                    typeSpeed={50}
+                    backSpeed={0}
+                    loop={true}
+                   > 
+                </Typed></p> 
+                    <React.Fragment className='frag'>
+                     <Link to="/dividers">
+                        <button className='btn' variant="contained" onClick={loadScreen}>Let's Begin !</button>
                     </Link>
                     </React.Fragment>
                         
