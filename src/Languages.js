@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './HomePage/NavBar';
 import './Languages.css';
 import Languages from './Data/Languages.json';
+import { Link } from 'react-router-dom';
 function TechLang() {
     return (
         <div>
@@ -31,8 +32,14 @@ function TechLang() {
         <img className='langpic' src={lang.image} alt="" />
       </figure>
 
+      <React.Fragment>
+      <Link to = {lang.learn}>
       <button>Learn</button>
+       </Link>
+       </React.Fragment>
       <button>Projects</button>
+      
+     
       
 
       <div class="design-container">

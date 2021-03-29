@@ -34,7 +34,7 @@ function NavBar()
 
     <div>
     <Navbar fixed="top" expand="lg" variant="dark" className='color-nav' className={NavBar ? 'navBar active' : 'navBar'}>
-  <Navbar.Brand href="#home"><img className='navlogo' src={NavLogo} />Cs Hut</Navbar.Brand>
+  <Navbar.Brand href="/"><img className='navlogo' src={NavLogo} /><a className='cshut' href='/'>Cs Hut</a></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">

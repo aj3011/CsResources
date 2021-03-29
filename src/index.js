@@ -11,6 +11,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Learn from './Learn';
+import Make from './Make.js';
 
 
 ReactDOM.render(
@@ -31,6 +33,14 @@ ReactDOM.render(
 
       <Switch>
         <Route exact path='/Tech' component={Tech} />
+      </Switch>
+
+      <Switch>
+        <Route exact path='/learncpp' component={Learn}/>
+      </Switch>
+
+      <Switch>
+      <Route exact path='/learnweb' component={Make}/>
       </Switch>
 
   </Router>
