@@ -9,6 +9,14 @@
     background: #212121;
     font-family: sans-serif;
   }
+
+  .new{
+      margin-top: -100px;
+  }
+  body{
+    /* to fix the background issue */
+    background: linear-gradient(180deg, var(--Black),var(--Cream)) fixed;
+  }
   .box{
     width: 1200px;
     display: grid;
@@ -57,7 +65,7 @@
   transition: 0.5s;
   z-index: 1;
   }
-  
+
   .card:hover .imgBx
   {
     bottom: 80px;
@@ -88,7 +96,7 @@
    font-size: 20px;
    color: #777;
    text-transform: uppercase;
-  } 
+  }
 
   .card .details h2 span{
   font-weight: 500;
@@ -96,11 +104,11 @@
   color: #f38695;
   display: block;
   margin-top: 5px;
-   } 
+   }
 
 .card{
     top:300px;
-    padding: 30px !important; 
+    padding: 30px !important;
 }
 
 .harry
