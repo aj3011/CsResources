@@ -1,5 +1,6 @@
 let technologies = [
   {
+    heading: "Web Development",
     name: "Web Development",
     description:
       "Web development is the building and maintenance of websites; it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.",
@@ -133,6 +134,7 @@ let technologies = [
     ]
   },
   {
+    heading: "Machine Learning",
     name: "Machine Learning",
     description:
       "Machine learning is the concept that a computer program can learn and adapt to new data without human intervention. Machine learning is a field of artificial intelligence (AI) that keeps a computer's built-in algorithms current regardless of changes in the worldwide economy.",
@@ -174,6 +176,7 @@ let technologies = [
     ]
   },
   {
+    heading: "Data Structures",
     name: "Data Structures",
     description:
       "In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification",

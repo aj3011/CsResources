@@ -6,6 +6,16 @@
 }
 /* class figured out from inspect element */
 
+.mynav{
+    background-color: var(--Blue) !important;
+    height: 70px !important;
+    border-radius: 10px !important;
+}
+
+.navBar.active {
+    transition: 0.5s smooth;
+    background-color: var(--Blue);
+}
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color:var(--Blue) !important;
     background: beige;
@@ -21,10 +31,7 @@
     padding-right: 40px !important;
     /* important tag overrides all applied styling to the element */
 }
-.navBar.active{
-    transition: 0.5s smooth;
-    background-color:var(--Blue);
-}
+
 
 .navbar{
     height: 7vh;

@@ -39,7 +39,9 @@ function App() {
             path={lang.learnPath}
             key={i}
             // whenever we want to use props, we will use render instead of components
-            render={() => <Learn resources={lang.learnContent} />}
+            render={() => (
+              <Learn name={lang.heading} resources={lang.learnContent} />
+            )}
           />
         ))}
 
@@ -48,7 +50,9 @@ function App() {
             exact
             path={tech.projPath}
             key={i}
-            render={() => <Make resources={tech.ApplyContent} />}
+            render={() => (
+              <Make name={tech.heading} resources={tech.ApplyContent} />
+            )}
           />
         ))}
 
@@ -57,7 +61,9 @@ function App() {
             exact
             path={learn.learnPath}
             key={i}
-            render={() => <Learn resources={learn.learnContent} />}
+            render={() => (
+              <Learn name={learn.heading} resources={learn.learnContent} />
+            )}
           />
         ))}
 
@@ -66,7 +72,9 @@ function App() {
             exact
             path={tech.projPath}
             key={i}
-            render={() => <Make resources={tech.ApplyContent} />}
+            render={() => (
+              <Make name={tech.heading} resources={tech.ApplyContent} />
+            )}
           />
         ))}
 

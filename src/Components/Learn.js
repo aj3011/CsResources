@@ -4,6 +4,7 @@ import "./Learn.css";
 function Learn(props) {
   return (
     <div>
+      <div className="h">{props.name}</div>
       <div class="new">
         {/* <div className='headings'>C++</div> */}
         <div class="box">

@@ -9,7 +9,7 @@
     background: #212121;
     font-family: sans-serif;
   } */
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
   .new{
       margin-top: -100px;
   }
@@ -127,7 +127,13 @@
     color:white;
 }
 
-.lcard
+.h
 {
-
+  font-family: 'Permanent Marker',
+  cursive;
+ position: absolute  !important;
+ color: white !important;
+ font-size: 40px;
+ left: 600px;
+ top:100px;
 }
