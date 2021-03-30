@@ -52,6 +52,24 @@ function App() {
           />
         ))}
 
+        {technologies.map((learn, i) => (
+          <Route
+            exact
+            path={learn.learnPath}
+            key={i}
+            render={() => <Learn resources={learn.learnContent} />}
+          />
+        ))}
+
+        {technologies.map((tech, i) => (
+          <Route
+            exact
+            path={tech.projPath}
+            key={i}
+            render={() => <Make resources={tech.ApplyContent} />}
+          />
+        ))}
+
         <Route exact path="/dividers" component={Dividers} />
         <Route exact path="/Languages" component={Languages} />
         <Route exact path="/Tech" component={Tech} />

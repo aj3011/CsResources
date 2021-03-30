@@ -26,9 +26,11 @@ function ProjectIdeas() {
                   <img className="langpic" src={tech.image} alt="" />
                 </figure>
 
-                <button>Learn</button>
+                <Link to={tech.learnPath}>
+                  <button>Learn</button>
+                </Link>
 
-                <Link to={tech.proj}>
+                <Link to={tech.projPath}>
                   <button>Projects</button>
                 </Link>
 

@@ -1,4 +1,4 @@
-.neww{
+/* .neww{
     margin: 0;
     padding: 0;
     display: grid;
@@ -8,7 +8,7 @@
     min-height: 100vh;
     background: #212121;
     font-family: sans-serif;
-  }
+  } */
 
   .new{
       margin-top: -100px;
@@ -108,7 +108,7 @@
 
 .card{
     top:300px;
-    padding: 30px !important;
+
 }
 
 .harry
@@ -125,4 +125,9 @@
     top:150px;
     position: absolute;
     color:white;
+}
+
+.lcard
+{
+
 }

@@ -13,11 +13,12 @@
 .navBar{
     background-color: none;
     height: 75px !important;
+    z-index: 40;
 }
 .nav-link
 {
     color: white;
-    padding-right: 40px !important; 
+    padding-right: 40px !important;
     /* important tag overrides all applied styling to the element */
 }
 .navBar.active{
@@ -44,17 +45,17 @@
     height : 30px;
     width: 30px;
     padding-right: 10px;
-   
+
 }
 
 .brandName h1{
-   
+
     font-size: 20px;
     padding-left: 10px;
     font-weight: 700;
     cursor: pointer;
     color:var(--Cream);
-    
+
 }
 
 .navbutton{

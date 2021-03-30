@@ -8,7 +8,7 @@ function Learn(props) {
         {/* <div className='headings'>C++</div> */}
         <div class="box">
           {props.resources.map(resource => (
-            <div class="card">
+            <div class="card lcard">
               <div class="imgBx">
                 {console.log("***" + props.name)}
                 <a href={resource.link}>
