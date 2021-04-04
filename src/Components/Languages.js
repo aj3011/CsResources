@@ -14,7 +14,7 @@ function TechLang() {
                 <figure>
                   <div class="img-bg"></div>
                   <img className="langpic" src={lang.image} alt="" />
-                  <figcaption>{lang.name}</figcaption>
+                  <figcaption>{lang.heading}</figcaption>
                 </figure>
                 <ul>
                   <p>{lang.description}</p>

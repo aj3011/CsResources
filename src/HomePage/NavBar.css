@@ -1,129 +1,56 @@
-:root{
-    --Green: #66FCF1;
-   --Cream: #ede7e3;
-   --Orange: #ffa62b;
-   --Blue:#1f2833;
+.navBar a.navbar-brand {
+    color: white;
+    font-size: 25px;
 }
-/* class figured out from inspect element */
 
-.mynav{
-    background-color: var(--Blue) !important;
-    height: 70px !important;
-    border-radius: 10px !important;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-right: 20px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    padding-right: 20px;
+    color: var(--SkyBlue);
+    transform: scale(1.2);
+    padding-left: 20px;
+  padding-right: 20px;
+    transition: 0.6s;
 }
 
 .navBar.active {
     transition: 0.5s smooth;
     background-color: var(--Blue);
 }
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color:var(--Blue) !important;
-    background: beige;
-}
-.navBar{
-    background-color: none;
-    height: 75px !important;
-    z-index: 40;
-}
-.nav-link
-{
-    color: white;
-    padding-right: 40px !important;
-    /* important tag overrides all applied styling to the element */
+
+.nav-img {
+    height: 70px;
+    width: 70px;
+    padding-right: 5px;
 }
 
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-color: var(--Blue);
+    }
 
-.navbar{
-    height: 7vh;
-    width: 100%;
-    position: fixed;
-    color: var(--Cream);
+    .ml-auto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        margin-left: 20px;
+    }
+
+    .borderbottom {
+        height: 2px;
+        background-color: white;
+        width: 50%;
+        margin-top: 1px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 99;
+    }
 }
-
-
-
-.brandName{
-    display: flex;
-    margin-top: 3px;
-    margin-left: 100px;
-}
-
-.brandName img{
-    height : 30px;
-    width: 30px;
-    padding-right: 10px;
-
-}
-
-.brandName h1{
-
-    font-size: 20px;
-    padding-left: 10px;
-    font-weight: 700;
-    cursor: pointer;
-    color:var(--Cream);
-
-}
-
-.navbutton{
-   margin-bottom: 3px;
-    margin-right: 100px;
-}
-
-.navbutton a
-{
-    padding: 10px;
-    color:var(--Cream);
-    font-size: 20px;
-}
-
-
-.navbutton img{
-    margin-bottom: 3px;
-}
-.navbutton a:hover{
- text-decoration: none;
- color: var(--Orange);
-}
-
-
-
-.ml-auto img{
-    padding: 15px;
-}
-
-.banner-heading button {
-    background-color: var(--Black);
-    border: 2px solid var(--SkyBlue);
-    color: var(--Cream);
-    font-weight: 500;
-    height:60px;
-    width: 200px;
-    border-radius: 50px;
-  }
-
-  .banner-heading button:hover {
-    transition: 0.2 smooth;
-    background-color: transparent;
-    color: var(--Black);
-  }
-
-  .navlogo{
-      height: 60px;
-      margin-right: 10px;
-  }
-
-  /* #basic-navbar-nav
-  {
-      background-color: blue;
-  } */
-
-  .cshut
-  {
-      color:white;
-  }
-  .cshut:hover
-  {
-      color:white;
-      text-decoration: none;
-  }

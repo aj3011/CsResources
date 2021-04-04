@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(180deg, var(--Black), var(--Cream)); 
+    background: linear-gradient(180deg, var(--Black), var(--Cream));
 }
 
 .resources{
@@ -18,8 +18,9 @@
     text-align: center;
     border-radius: 60px;
     box-shadow:2px 2px 30px #000;
+     transition:all 0.6s;
 
-   
+
 }
 .projects
 {
@@ -30,7 +31,8 @@
     margin-right: 120px;
     box-shadow:2px 2px 30px #000;
     border-radius: 60px;
-   
+    transition:all 0.6s;
+
 }
 
 .rheading{
@@ -38,10 +40,10 @@
     background-color: #45a29e;
     font-size: 70px;
     width:700px;
-    
+
     font-family: 'Permanent Marker', cursive;
     cursor: pointer;
-    
+
 }
 
 .pheading{
@@ -58,7 +60,7 @@
     transform:scale(1.2);
     transition: all 1s ;
     text-shadow: 2px 2px 8px #000;
-    
+
 }
 
 .pheading:hover{
@@ -67,7 +69,7 @@
     transform:scale(1.2);
     transition: all 1s ;
     text-shadow: 2px 2px 8px #000;
-    
+
 }
 
 .para

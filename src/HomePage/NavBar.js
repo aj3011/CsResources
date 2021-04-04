@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import brandIcon from "./Icons/struggle.png";
-import homeIcon from "./Icons/web-page-home.png";
-import AboutUs from "./Icons/information.png";
-import ContactUs from "./Icons/contact.png";
 import { Nav, Navbar } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { IconContext } from "react-icons";
 import { FaHome, FaInfoCircle } from "react-icons/fa";
 import { MdComputer, MdContactMail } from "react-icons/md";
@@ -32,43 +28,47 @@ function NavBar() {
           fixed="top"
           expand="lg"
           variant="dark"
-          className="color-nav"
           className={NavBar ? "navBar active" : "navBar"}
         >
           <Navbar.Brand href="/">
-            <img className="navlogo" src={NavLogo} />
-            <a className="cshut" href="/">
-              Cs Hut
-            </a>
+            <img src={NavLogo} alt="" className="nav-img" />
+            CS Hut
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="custom-toggler"
+          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <FaHome />
               <Nav.Link href="/">Home</Nav.Link>
+              <div className="borderbottom"></div>
               <MdComputer />
-              <Nav.Link href="/dividers">Resources</Nav.Link>
+              <Nav.Link href="#link">Resources</Nav.Link>
+              <div className="borderbottom"></div>
               <FaInfoCircle />
               <Nav.Link href="#about">About</Nav.Link>
+              <div className="borderbottom"></div>
               <MdContactMail />
               <Nav.Link href="#contact">Contact</Nav.Link>
+              <div className="borderbottom"></div>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {/* <div className = 'brandName'>
-      <img src={brandIcon}></img>
-      <h1>Title</h1>
-    </div>
-
-    <div className = 'navbutton'>
-    <img src ={homeIcon} /> <a href='#home'>Home</a>
-     <a href='#home' >About</a>
-     <a href='#home'>Resources</a>
-     <a href='#home'>Contact Us</a>
-
-    </div> */}
       </div>
     </IconContext.Provider>
+    // <div className='navbar'>
+    // <div className="brandName">
+    //     <img className='logo' src={brandIcon} alt='' />
+    //     <h1 className='title'>TITLE</h1>
+    // </div>
+    // <div className="navbutton">
+    //     <img src={homeIcon} alt='' /><a href='#home'>HOME</a>
+    //     <a href='#about'>ABOUT</a>
+    //     <a href='#resources'>RESOURCES</a>
+    //     <a href='#contact'>CONTACT</a>
+    // </div>
+    //     </div>
   );
 }
 

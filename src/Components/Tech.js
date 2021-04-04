@@ -13,7 +13,7 @@ function ProjectIdeas() {
                 <figure>
                   <div class="img-bg"></div>
                   <img className="langpic techpic" src={tech.image} alt="" />
-                  <figcaption>{tech.name}</figcaption>
+                  <figcaption>{tech.heading}</figcaption>
                 </figure>
                 <ul>
                   <p>{tech.description}</p>
