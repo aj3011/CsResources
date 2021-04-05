@@ -4,7 +4,9 @@ import "./Make.css";
 function Make(props) {
   return (
     <div class="make">
-      <div className="h">{props.name}</div>
+      <div className="h">
+        <p className="h-minor">{props.name}</p>
+      </div>
       <div class="container">
         {props.resources.map(resource => (
           <div class="cards">

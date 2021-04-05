@@ -1,5 +1,6 @@
 
 .aboutus h1 {
+    color: white;
     text-align: center;
     margin: 0;
 }
@@ -12,6 +13,7 @@
 }
 
 .about-content p {
+    color: white;
     padding: 20px;
 }
 
@@ -20,3 +22,18 @@
     align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+
+    .about{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about img{
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+
+}

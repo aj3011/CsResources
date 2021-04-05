@@ -16,10 +16,12 @@
   body{
     /* to fix the background issue */
     background: linear-gradient(180deg, var(--Black),var(--Cream)) fixed;
+    max-width: 100%;
   }
   .box{
-    width: 1200px;
+    max-width: 1200px;
     display: grid;
+    /* The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. */
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
     margin: 0 auto;
@@ -127,17 +129,105 @@
 .headings{
     left: 650px;
     top:150px;
-    position: absolute;
+    position:absolute;
     color:white;
 }
 
 .h
 {
-  font-family: 'Permanent Marker',
-  cursive;
- position: absolute  !important;
+font-family: 'Permanent Marker',cursive;
  color: white !important;
  font-size: 40px;
- left: 600px;
+ position: absolute;
+ /* left: 628px !important; */
  top:100px;
+ width: 100%;
+ margin: 0 auto;
+ max-width: 600px;
+ left: 0;
+ right: 0;
+ text-align: center;
+
+}
+
+ /* .h-minor
+{
+  position: relative;
+  left: 550px;
+  width: 30%;
+} */
+@media screen and (max-width:991px)
+{
+ .box{
+   margin-left: 80px !important;
+   width: 950px;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-gap:5px;
+    margin:0px;
+    padding:0px;
+ }
+
+ .card{
+   position: relative;
+   margin-bottom: 40px ;
+
+ }
+
+ /* .h-minor{
+   position: absolute;
+   margin-left: -220px !important;
+ } */
+}
+
+@media screen and (max-width:760px) {
+  .box{
+    margin-left: 40px !important;
+    width: 560px;
+    display: grid;
+  }
+
+  .card{
+    margin-bottom: 40px;
+  }
+
+  /* .h-minor{
+    position: absolute !important;
+    width: 70%;
+    left: 460px !important;
+     height: 200px !important;
+  } */
+}
+
+@media screen and (max-width:650px) {
+  .box {
+    margin-left: 140px !important;
+    width: 560px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  /* .h-minor{
+    position: absolute !important;
+    width: 70%;
+    left: 460px !important;
+     height: 200px !important;
+  } */
+}
+
+@media screen and (max-width:210px) {
+  .box {
+    margin-left: 200px !important;
+    width: 160px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
 }

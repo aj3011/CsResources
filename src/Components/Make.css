@@ -99,8 +99,65 @@
     color: #fff;
 }
 
-.h{
-    position: relative;
-    top:50px;
-    z-index: 100;
+.cards{
+    margin: 0;
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        margin-left: 140px !important;
+        width: 950px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .cards {
+        width: 30px;
+        position: relative;
+        margin-bottom: 40px;
+
+    }
+/*
+    .h-minor {
+        position: absolute;
+        margin-left: -220px !important;
+    } */
+}
+
+@media screen and (max-width:760px) {
+    .container {
+        margin-left: 40px !important;
+        width: 560px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .cards {
+        margin-top: 100px;
+        left: 150px;
+        margin-top: 100px;
+        right: 50px;
+    }
+
+    /* .h-minor {
+        position: absolute !important;
+        left: 460px !important;
+        height: 200px !important;
+    } */
+}
+
+@media screen and (max-width:210px) {
+    .container {
+        margin-left: 200px !important;
+        width: 160px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .cards {
+        margin-bottom: 40px;
+    }
 }

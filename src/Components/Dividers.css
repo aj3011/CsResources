@@ -80,15 +80,35 @@
 
 
 .ques{
+    color: white;
     font-size: 30px;
     position: absolute;
-    align-items: center !important;
-    height: 10vh;
-    width: 50%;
-    margin-top: 100px;
-    left: 170px;
+    max-width: 600px;
+     margin: 0 auto;
+    left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 100px !important;
     font-family: 'New Tegomin', serif;
+    text-align: center;
+}
+
+@media screen and (max-width:1009px)
+{
+    .divider{
+        display: flex;
+        flex-direction: column;
+        margin-top:400px;
+    }
+
+    .resources
+    {
+       margin: 0 auto;
+       left: 0;
+       right: 0;
+
+    }
+
+    .projects{
+
+    }
 }
