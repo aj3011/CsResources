@@ -13,6 +13,7 @@
 }
 
 .about-content p {
+    text-align: center;
     color: white;
     padding: 20px;
 }
@@ -20,6 +21,20 @@
 .about {
     display: flex;
     align-items: center;
+}
+
+.creators
+{
+    display: flex;
+}
+.astf
+{
+    margin: 0 auto;
+    left: auto;
+    right: auto;
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 991px) {

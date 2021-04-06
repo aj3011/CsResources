@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function TechLang() {
   return (
     <div>
+      <div className="h">Languages</div>
       <div class="techLang">
         {Languages.map(lang => (
           <div class="flip-card-container">

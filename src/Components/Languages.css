@@ -2,16 +2,16 @@
 
 .techLang {
 	display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   min-height: 100vh;
   padding: 40px;
+  margin-top: 140px;
   width: 100%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, var(--Blue), var(--Green));
   font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -138,7 +138,7 @@ figcaption {
 /* .img-bg */
 .img-bg {
   background: hsla(var(--hue), 5%, 10%, .5);
-  
+
 }
 
 .card-front .img-bg {
